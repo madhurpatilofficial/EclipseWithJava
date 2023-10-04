@@ -29,8 +29,8 @@ public class Employee {
 		this.empName = empName;
 		
 	}
-	public int setSal(double d) {
-		return this.salary;
+	public void setSal(int salary) {
+		this.salary = salary;
 	}
 	public String toString() {
 		return ("Emp Details: "  + empId + empName + salary);

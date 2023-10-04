@@ -4,6 +4,10 @@ public class XYZorg {
 
 	public static void main(String[] args) {
 		
+		SalesEmployee se1=new SalesEmployee(101,"Eshan",10000,5000);
+		
+		System.out.println(se1);
+	
 		ArrayList<Employee> empList = new ArrayList<Employee>();
 		Scanner sc = new Scanner(System.in);
 		
@@ -27,6 +31,7 @@ public class XYZorg {
 				System.out.print("Emp salary: ");
 				int sal = sc.nextInt();
 				
+				//from here it knows that empName means name, empId means id etc
 				empList.add(new Employee(id, name, sal));
 				System.out.println("Record Added");
 				break;
@@ -110,5 +115,6 @@ public class XYZorg {
 	
 
 	}
-
 }
+}
+
