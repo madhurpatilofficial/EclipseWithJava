@@ -1,0 +1,11 @@
+package myapp;
+
+public class SimplePrint {
+	
+	
+	Public Static void main(String args[]) {
+		
+	System.out.println("Hello");
+
+}
+}

@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module Day1_Java {
+	requires java.desktop;
+}

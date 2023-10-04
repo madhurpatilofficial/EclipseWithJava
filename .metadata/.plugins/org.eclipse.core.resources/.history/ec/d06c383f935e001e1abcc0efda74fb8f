@@ -1,0 +1,11 @@
+package com.training.org;
+
+public class HelloGithub {
+
+	public static void main(String[] args) {
+		main
+		// TODO Auto-generated method stub
+
+	}
+
+}

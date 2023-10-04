@@ -1,0 +1,65 @@
+package com.training.org;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.*;
+
+import javax.swing.JOptionPane;
+
+
+public class Complex {
+	private int real;
+	private int img;
+	
+	 //default constructor
+	public Complex(){                  
+		System.out.println("constructor called");
+		real = 9;             //initialized data member
+		img = 30;              //initialized data member
+	}
+	
+	//parameterized constructor
+	public Complex(int real, int img) {
+		System.out.println("Prameterised constructor");
+		this.real = real;
+		this.img = img;
+	}
+	
+	public void showComplexValues() {
+		System.out.println("Real " + real + " Complex " + img);
+	}
+	
+//	public void getValues() throws IOException {
+//		//old way of getting input from user
+//		BufferedReader ip = new BufferedReader(new InputStreamReader(System.in));
+//		System.out.print("Enter Real: ");
+//		this.real = Integer.parseInt(ip.readLine());
+//		System.out.print("Enter IMG: ");
+//		this.img = Integer.parseInt(ip.readLine());
+//	}
+	
+	public void scannerInput() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter Real: ");
+		this.real = sc.nextInt();
+		
+		System.out.print("Enter Img: ");
+		this.img = sc.nextInt();	
+	}
+	public void joptionPlane(){
+		this.real = Integer.parseInt(JOptionPane.showInputDialog("Enter Real: "));
+		this.img = Integer.parseInt(JOptionPane.showInputDialog("Enter Img: "));
+		JOptionPane.showMessageDialog(null, "Values are:" + " "+ this.real + " " + this.img);
+	}
+	
+	
+	
+	public static void main(String[] args) throws IOException {
+//		Complex c2 = new Complex(3,4); //parameterised constructor caller
+		Complex c1 = new Complex(); //default constructor
+//		c1.scannerInput();
+		c1.joptionPlane();
+		c1.showComplexValues();		
+	}
+}

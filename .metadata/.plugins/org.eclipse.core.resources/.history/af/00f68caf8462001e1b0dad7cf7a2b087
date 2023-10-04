@@ -1,0 +1,26 @@
+
+public class Employee {
+	private int empId;
+	private String empName;
+	private int salary;
+	flag = 0;
+	public Employee() {
+		this.empId = 80;
+		this.empName = " Madhur ";
+		this.salary = 1000;
+	}
+	public Employee(int empId, String empName, int salary) {
+		System.out.println("Parameterised constructor");
+		this.empId = empId;
+		this.empName = empName;
+		this.salary = salary;
+	}
+	
+	public String getName() {
+		return this.empName;
+	}
+	public String toString() {
+		return ("Emp Details: "  + empId + empName + salary);
+	}
+
+}

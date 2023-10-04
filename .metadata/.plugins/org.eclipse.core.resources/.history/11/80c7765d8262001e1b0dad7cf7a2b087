@@ -1,0 +1,7 @@
+
+public class ArrayTest {
+	public static <ArrayList> void main(String[] args) {
+		ArrayList<ArrayTest> arr = new ArrayList<ArrayList>();
+	}
+
+}
