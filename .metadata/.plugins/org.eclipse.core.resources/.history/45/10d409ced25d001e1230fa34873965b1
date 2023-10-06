@@ -1,6 +1,0 @@
-package myapp;
-
-public class SimplePrint {
-	system.out.println("")
-
-}

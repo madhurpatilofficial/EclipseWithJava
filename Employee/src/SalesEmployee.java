@@ -20,10 +20,28 @@ public class SalesEmployee extends Employee{
 		this.netSalary = 0;
 	}
 	
+	
 	public String toString() {
 		return super.toString()+ "Sales "+this.sales+" Commission "+this.commission+" Net Salary"+this.netSalary;
 	}
 	
-	
-
+	public void checkSalary() {
+		if (sales<500) {
+			commission = getSal() * 0.05;
+		}
+		else if(sales>=5000 && sales <1000) {
+			commission  = getSal() * 0.07;
+			
+		}
+		else if(sales>1000 && sales <15000) {
+			commission  = getSal() * 0.10;
+		}
+		else if(sales>=1500) {
+			commission = getSal() * 0.15;
+		}
+		else {
+			System.out.println("Not allowed");
+		}
+		netSalary = getSal() + commission;
+	}
 }
