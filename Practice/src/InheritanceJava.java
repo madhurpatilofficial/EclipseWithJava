@@ -22,7 +22,6 @@ class DerivedClass extends Vehicle{
 public class InheritanceJava {
 	public static void main(String[] args) {
 		DerivedClass obj = new DerivedClass();
-		obj
 	}
 
 }
