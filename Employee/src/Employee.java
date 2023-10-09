@@ -35,5 +35,4 @@ public class Employee {
 	public String toString() {
 		return ("Emp Details: "  + empId + empName + salary);
 	}
-
 }
